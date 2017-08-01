@@ -57,7 +57,7 @@ body {
 
 #header_logo {
     height: 40px;
-    position: absolute;
+    position: fixed;
     left: 8px;
     top: 8px;
 }
