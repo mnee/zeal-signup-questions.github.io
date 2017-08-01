@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Zeal Signup</title>
+  <link rel="icon" href="Favicon.png">
+  <!-- CORE CSS-->
+  <link rel="stylesheet" href="main.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  
+</head>
+<header>
+  <img src="student-zeal-full-logo.png" id="header_logo">
+</header>
+<body>
+<div style="display: table-cell;" id="signup_cell">
+  <div style="height:100px;">
+    <p id="header_text">Start your free trial!<br>
+        <span id="sub_text">See what your child can do with unlimited math tutoring</span>
+      </p>
+  </div>
+  <div id="login-page" class="row">
+    <div class="col s12 z-depth-6 card-panel">
+      <form class="login-form">
+        <div class="row">
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12" id="email_text">
+            <i class="mdi-communication-email prefix"></i>
+            <input id="email" type="email" class="validate" onclick="clickEmailField()" required autocomplete="email">
+            <label for="email" class="center-align">Email</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12" id="password_text">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input id="password" type="password" class="validate" onclick="showPassHelp()">
+            <label for="password">Password</label>
+          </div>
+            
+        </div>
+        <div id="password_help">Passwords must be at least 8 characters with at least 1 number and 1 letter.</div>
+        <div class="row">
+          <div class="input-field col s12" id="signup_text">
+            <a class="btn waves-effect waves-light col s12" id="signup_button" onclick="signup()">SIGN UP</a>
+          </div>
+          
+        </div>
+      </form>
+    </div>
+  </div>
+    </div>
+    
+    <div style="display: table-cell" id="steps">
+        <div class="text1">Still have questions?</div>
+        <a class="questions_click" onclick="toggleAnswer1()"><div class="question_title" id="question1">> How does Zeal work?</div></a>
+        <a class="questions_click" onclick="toggleAnswer2()"><div class="question_title" id="question2">> Who are Zeal tutors?</div></a>
+        <a class="questions_click" onclick="toggleAnswer3()"><div class="question_title" id="question3">> When are tutors available?</div></a>
+        <a class="questions_click" onclick="toggleAnswer4()"><div class="question_title" id="question4">> How much does Zeal cost?</div></a>
+        <a class="questions_click" onclick="toggleAnswer5()"><div class="question_title" id="question5">> How can I contact Zeal?</div></a>
+        <!--<div style="width: 50vw; height: 150px; background-color: #133256; position: absolute; top: 0px; z-index: 2;"></div>-->
+        <div id="answers"> 
+            <div id="answer1">Adaptive Practice: While your child practices personalized math problems, Zeal’s algorithm automatically adapts to their skill level, identifies knowledge gaps, and determines what they are ready to learn next.<br><br>
+            One-On-One Tutoring:
+            While your child practices, a tutor can join them for one-on-one tutoring. The tutor and your child work together using a shared whiteboard and 2-way audio feed. They break down a problem specifically selected for your child to develop a deeper understanding of the topic. Then your child is retested on the skills they just worked to see how much they’ve just learned!
+            <br><br>
+            Personalized Feedback:
+            Your child receives feedback and live help while using Zeal. You will get weekly progress report emails that include personalized feedback from your child’s tutors, video recordings of the tutoring sessions, and details on the skills your scholar learned! In addition, included in Zeal is a weekly Parent-Tutor check in call to discuss your child’s progress on Zeal!</div>
+            
+            <div id="answer2">Zeal tutors are former teachers and math majors. Students love Zeal because our tutors focus on developing critical thinking skills and instilling confidence! To ensure the highest quality tutors, each applicant must excel through our Zeal Tutor Quality Process.</div>
+            
+            <div id="answer3">Zeal tutors are available Monday-Friday 12:00pm to 6:00pm, PDT. With Zeal, you get unlimited tutoring with no scheduling so all your child needs to do is log in to get tutoring!</div>
+            
+            <div id="answer4">Join Zeal now and receive 1 week of free tutoring. After that Zeal is only $49.99 a month per child for an unlimited amount of live tutoring. Cancellation of your monthly subscription is easy. Simply email us at support@zeal.com and ask us to cancel your account.</div>
+            
+            <div id="answer5">Please call us at (415) 656-8243 or email us at support@zeal.com. We are here to help.</div>
+        </div>
+        
+    </div>
+
+
+  <!-- ================================================
+    Scripts
+    ================================================ -->
+
+  <script src="signup.js"></script>
+  <!-- jQuery Library -->
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!--materialize js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+
+</body>
+
+</html>

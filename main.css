@@ -1,0 +1,261 @@
+html {
+    display: table;
+    margin: 100px 30px;
+}
+body {
+    display: table-row;
+    background-image: url(Math_Background.png);
+}
+.margin {
+  margin: 0 !important;
+}
+    
+#background_img { 
+    width: 100vw;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+}
+
+#dim_button {
+    width: 100px;
+    height: 20px;
+}
+
+#password_help {
+    font-family: sans-serif; 
+    font-size: 12px; 
+    color: red; 
+    left: 54px; 
+    position: relative; 
+    visibility: hidden
+}
+
+#signup_button {
+    background-color: lightgrey;
+}
+
+#header_text {
+    color: white;
+    height: 37px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none solid rgb(255, 255, 255);
+    border: none;
+    font: normal normal 600 normal 40px / 37.7px "Whitney A", "Whitney B", Avenir, Helvetica, sans-serif;
+    outline: none 0px;
+}
+
+#sub_text {
+    font-size: 14px; 
+    font-family: sans-serif; 
+    font-weight: 100; 
+    line-height: 0px;
+}
+
+#header_logo {
+    height: 40px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+
+#password_text {
+    width: 470px;
+}
+
+#login-page {
+    position: relative;
+    align-content: center;
+}
+    
+#header_text {
+    font-size: 30px;
+    width: 360px;
+    display: block;
+    margin: auto;
+    line-height: 30px;
+}
+
+#password_text, #email_text, #signup_text {
+    width: 360px;
+}
+
+#login-page {
+    width: 400px;
+}
+
+#password_help {
+    width: 300px;
+}
+
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+    #header_text {
+        width: 500px;
+        position: relative;
+        top: 40px;
+        display: block;
+        margin: auto
+    }
+    
+}
+
+.number {
+    font-family="Roboto Condensed";
+    color: #9897b5;
+    font-size: 80px;
+    position: absolute;
+    top: 72px;
+    margin-left: 20px;
+    
+    font-style: italic;
+    
+}
+
+#number2 {
+    margin-top: 157.5px;
+}
+
+#number3 {
+    margin-top: 315px;
+}
+
+.text1 {
+    z-index: 3;
+    position: absolute;
+    margin-left: 50px;
+    top: 100px;
+    color: white;
+    letter-spacing: 0.9px;
+    font: normal normal 500 normal 26px / 37.7px "Whitney A", "Whitney B", Avenir, Helvetica, sans-serif;
+}
+
+.subtext1 {
+    position: absolute;
+    margin: 40px 0px 0px 80px;
+    color: lightgrey;
+    letter-spacing: 0.9px;
+    font-family="Roboto Condensed";
+    font-size: 14px;
+    font-style: italic;
+}
+
+#signup_cell {
+    width: 50vw
+}
+
+.question_title {
+    position: relative;
+    top: 50px;
+    height: 40px;
+    width: 40vw;
+    font: normal normal 600 normal 16px / 37.7px "Roboto Condensed", Avenir, Helvetica, sans-serif;
+    padding-left: 15px;
+    padding-top: 3px;
+    background-color: #13B2C5;
+    z-index: 2;
+    margin-left: 50px;
+    color: white;
+    transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+.questions_click {
+    cursor: pointer
+}
+
+#answer1 {
+    z-index: 1;
+    position: relative;
+    top: -340px;
+    height: 340px;
+    width: 40vw;
+    font: normal normal 600 normal 12px / 16px "Roboto Condensed", Avenir, Helvetica, sans-serif;
+    padding: 5px 15px;
+    background-color: #F0FCFE;
+    color: #133256;
+    transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+#answers {
+    position: absolute;
+    height: 70vh;
+    width: 40vw;
+    top: 150px;
+    margin-left: 50px;
+    overflow-y: hidden;
+}
+
+#answer2 {
+    z-index: 1;
+    position: relative;
+    top: -395px;
+    height: 95px;
+    width: 40vw;
+    font: normal normal 600 normal 12px / 16px "Roboto Condensed", Avenir, Helvetica, sans-serif;
+    padding: 5px 15px;
+    background-color: #F0FCFE;
+    color: #133256;
+    transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+#answer3 {
+    z-index: 1;
+    position: relative;
+    top: -420px;
+    height: 75px;
+    width: 40vw;
+    font: normal normal 600 normal 12px / 16px "Roboto Condensed", Avenir, Helvetica, sans-serif;
+    padding: 5px 15px;
+    background-color: #F0FCFE;
+    color: #133256;
+    transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+#answer4 {
+    z-index: 1;
+    position: relative;
+    top: -400px;
+    height: 90px;
+    width: 40vw;
+    font: normal normal 600 normal 12px / 16px "Roboto Condensed", Avenir, Helvetica, sans-serif;
+    padding: 5px 15px;
+    background-color: #F0FCFE;
+    color: #133256;
+    transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+#answer5 {
+    z-index: 1;
+    position: relative;
+    top: -460px;
+    height: 45px;
+    width: 40vw;
+    font: normal normal 600 normal 12px / 16px "Roboto Condensed", Avenir, Helvetica, sans-serif;
+    padding: 5px 15px;
+    background-color: #F0FCFE;
+    color: #133256;
+    transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+@media only screen and (max-width: 904px) {
+    #signup_cell {
+        display: block;
+        margin: auto;
+        width: 100px;
+    }
+    
+    #steps {
+        visibility: hidden;
+    }
+    
+    body {
+        background-color: transparent;
+        background-image: url(Math_Background.png);
+    }
+
+}
+#steps {
+    
+}
