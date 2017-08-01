@@ -15,11 +15,11 @@ function handleToken(data) {
 }
         
 function signup() {
+    mixpanel.track("landing_signup");
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
-    var prof = {"user":{"name": email, "password": password}};
+    var prof = {"user":{"first_name": email, "last_name": "Tutoring", "name": email, "password": password}};
     console.log(JSON.stringify(prof));
-    mixpanel.track("landing_signup");
     $.post("https://api.zeal.com/v7/public/users/parent", prof).done(handleToken);
 }
 
