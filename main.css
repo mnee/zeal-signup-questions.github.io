@@ -125,11 +125,11 @@ body {
 .text1 {
     z-index: 3;
     position: absolute;
-    margin-left: 50px;
     top: 100px;
     color: white;
     letter-spacing: 0.9px;
-    font: normal normal 500 normal 26px / 37.7px "Whitney A", "Whitney B", Avenir, Helvetica, sans-serif;
+    margin-left: 20px;
+    font: normal normal 500 normal 22px / 37.7px "Whitney A", "Whitney B", Avenir, Helvetica, sans-serif;
 }
 
 .subtext1 {
@@ -143,20 +143,23 @@ body {
 }
 
 #signup_cell {
-    width: 50vw
+    position: relative; 
+    width: 70vw;
 }
 
 .question_title {
     position: relative;
     top: 50px;
     height: 40px;
-    width: 40vw;
+    width: 25vw;
     font: normal normal 600 normal 16px / 37.7px "Roboto Condensed", Avenir, Helvetica, sans-serif;
     padding-left: 15px;
     padding-top: 3px;
-    background-color: #13B2C5;
+    background-color: #D3D3D3;
     z-index: 2;
+    right: 30px;;
     margin-left: 50px;
+    border-bottom: 2px solid black;
     color: white;
     transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
@@ -167,75 +170,76 @@ body {
 
 #answer1 {
     z-index: 1;
+    height: auto;
     position: relative;
+    display: inline-block;
     top: -340px;
-    height: 340px;
-    width: 40vw;
+    width: 25vw;
     font: normal normal 600 normal 12px / 16px "Roboto Condensed", Avenir, Helvetica, sans-serif;
     padding: 5px 15px;
-    background-color: #F0FCFE;
-    color: #133256;
+    background-color: white;
+    color: #4A4A4A;
     transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
 #answers {
     position: absolute;
-    height: 70vh;
-    width: 40vw;
+    height: auto;
+    width: 25vw;
     top: 150px;
-    margin-left: 50px;
+    margin-left: 20px;
     overflow-y: hidden;
 }
 
 #answer2 {
     z-index: 1;
     position: relative;
-    top: -395px;
-    height: 95px;
-    width: 40vw;
+    display: inline-block;
+    top: -1000px;
+    width: 25vw;
     font: normal normal 600 normal 12px / 16px "Roboto Condensed", Avenir, Helvetica, sans-serif;
     padding: 5px 15px;
-    background-color: #F0FCFE;
-    color: #133256;
+    background-color: white;
+    color: #4A4A4A;
     transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
 #answer3 {
     z-index: 1;
     position: relative;
-    top: -420px;
-    height: 75px;
-    width: 40vw;
+    top: -1000px;
+    display: inline-block;
+    width: 25vw;
     font: normal normal 600 normal 12px / 16px "Roboto Condensed", Avenir, Helvetica, sans-serif;
     padding: 5px 15px;
-    background-color: #F0FCFE;
-    color: #133256;
+    background-color: white;
+    color: #4A4A4A;
     transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
 #answer4 {
     z-index: 1;
     position: relative;
-    top: -400px;
-    height: 90px;
-    width: 40vw;
+    top: -1200px;
+    display: inline-block;
+    width: 25vw;
     font: normal normal 600 normal 12px / 16px "Roboto Condensed", Avenir, Helvetica, sans-serif;
     padding: 5px 15px;
-    background-color: #F0FCFE;
-    color: #133256;
+    background-color: white;
+    color: #4A4A4A;
     transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
 #answer5 {
     z-index: 1;
     position: relative;
-    top: -460px;
-    height: 45px;
-    width: 40vw;
+    top: -1200px;
+    display: inline-block;
+    width: 25vw;
     font: normal normal 600 normal 12px / 16px "Roboto Condensed", Avenir, Helvetica, sans-serif;
     padding: 5px 15px;
-    background-color: #F0FCFE;
-    color: #133256;
+    background-color: white;
+    color: #4A4A4A;
     transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
@@ -256,6 +260,117 @@ body {
     }
 
 }
-#steps {
-    
+
+#tutor_card_container {
+    width: 25vw;
+    height: 430px;
+    position: relative;
+    float: left;
+    margin-left: -1.6vw;
+    top: 50px;
+    background-color: white;
+    overflow: hidden;
 }
+
+.tutor_card {
+    float: left;
+    position: absolute;
+    width: 22vw;
+    height: 420px;
+    z-index: 39;
+    min-height: 300px;
+    margin-top, margin-bottom: 5px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 2.5px;
+	background-color: #ffffff;
+	background-color: var(--white);
+	box-shadow: -1px 1px 5px 0 rgba(0, 0, 0, 0.1);
+    transition: left 1200ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+.tutor_name {
+    width: 20vw;
+    margin: 2vw 0vw 0vw 2vw;
+	height: 30px;
+	font-family: Roboto, sans-serif;
+	font-size: 1.7vw;
+	font-weight: 500;
+	line-height: 1.5;
+	color: #4a4a4a;
+}
+
+.tutor_title {
+    width: 23vw;
+    margin-top: -.65vw;
+    margin-left: 2vw;
+	height: 30px;
+	font-family: Roboto, sans-serif;
+	font-size: 1vw;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #4a4a4a;
+}
+
+.tutor_bio {
+    width: 20vw;
+    margin-left: 2vw;
+	display: inline-block;
+	font-family: Roboto, sans-serif;
+	font-size: .8vw;
+	font-weight: 300;
+	line-height: 1.5;
+    overflow: scroll;
+	color: #4a4a4a;
+}
+
+#tutor_kelsey {
+    left: 32vw;
+}
+
+#tutor_gradient {
+    position: absolute;
+    width: 18vw;
+    height: 390px;
+    right: 0px;
+    z-index: 40;
+    top: 35px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.0), #ffffff);
+}
+
+#next_tutor {
+    cursor: pointer;
+}
+
+#tutor_caroline {
+    left: -32vw;
+    visibility: visible;
+}
+
+#tutor_adam {
+    left: 64vw;
+    visibility: visible;
+}
+
+@media only screen and (min-width: 881px) {
+    .tutor_name {
+        font-size: 15.81px;   
+    }
+    
+    .tutor_title {
+        font-size: 13.02px;
+    }
+    
+    .tutor_bio {
+        font-size: 10.572px;
+    }
+    
+    #tutor_sub_head {
+        font-size: 18px;
+    }
+    
+    #tutor_description, #background_check_text {
+        font-size: 12px;
+    }
+}
+

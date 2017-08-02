@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,28 +12,28 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
     
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-  
+    
 </head>
 <header>
   <img src="student-zeal-full-logo.png" id="header_logo">
 </header>
 <body>
 <div style="display: table-cell;" id="signup_cell">
+    <div style="position: fixed; margin-left: 20vw;">
   <div style="height:100px;">
     <p id="header_text">Start your free trial!<br>
         <span id="sub_text">See what your child can do with unlimited math tutoring</span>
       </p>
   </div>
   <div id="login-page" class="row">
-    <div class="col s12 z-depth-6 card-panel">
+    <div class="col s12 z-depth-6 card-panel" style="background-color: ">
       <form class="login-form">
         <div class="row">
         </div>
         <div class="row margin">
           <div class="input-field col s12" id="email_text">
             <i class="mdi-communication-email prefix"></i>
-            <input id="email" type="email" class="validate" required autocomplete="email">
+            <input id="email" type="email" class="validate" onclick="clickEmailField()" required autocomplete="email">
             <label for="email" class="center-align">Email</label>
           </div>
         </div>
@@ -56,7 +56,7 @@
     </div>
   </div>
     </div>
-    
+    </div>
     <div style="display: table-cell" id="steps">
         <div class="text1">Still have questions?</div>
         <a class="questions_click" onclick="toggleAnswer1()"><div class="question_title" id="question1">> How does Zeal work?</div></a>
@@ -73,7 +73,39 @@
             Personalized Feedback:
             Your child receives feedback and live help while using Zeal. You will get weekly progress report emails that include personalized feedback from your child’s tutors, video recordings of the tutoring sessions, and details on the skills your scholar learned! In addition, included in Zeal is a weekly Parent-Tutor check in call to discuss your child’s progress on Zeal!</div>
             
-            <div id="answer2">Zeal tutors are former teachers and math majors. Students love Zeal because our tutors focus on developing critical thinking skills and instilling confidence! To ensure the highest quality tutors, each applicant must excel through our Zeal Tutor Quality Process.</div>
+            <div id="answer2">
+                <div id="tutor_gradient">
+                    <a id="next_tutor" onclick="slideTutors()">
+                        <img src="NextArrow.png" style="width: 60px; float: right; align-content: center; top: 18vw; position: relative;">
+                    </a>
+                </div>
+                <div id="tutor_card_container">
+                    <div class="tutor_card" id="tutor_rob">
+                        <img src="RobHeadshot.png" style="width: 23vw; height: 190px; object-fit: cover;">
+                        <div class="tutor_name">Rob Huizar<span><a href="https://www.linkedin.com/in/robert-huizar-7ab83971/" target="_blank" onclick="trackTutorLinkedin()"><img src="LinkedinArrow.png" style="width: 3.5vw; float: right; vertical-align: super; z-index: 41"></a></span></div>
+                        <div class="tutor_title">3 years as lead math coach at Zeal</div>
+                        <div class="tutor_bio">Hi. I'm Rob. At Zeal, we ask a lot of questions because that's the best way to get students thinking and feeling empowered. It's really exciting to talk with a student that's frustrated and get them to a place where they're excited. That’s a beautiful thing.</div>
+                    </div>
+                    <div class="tutor_card" id="tutor_kelsey">
+                        <img src="KelseyHeadshot.jpg" style="width: 23vw; height: 190px; object-fit: cover; object-position: 80% 30%">
+                        <div class="tutor_name">Kelsey Winchester<span><a href="https://www.linkedin.com/in/kelsey-winchester-47ab50130/" target="_blank" onclick="trackTutorLinkedin()"><img src="LinkedinArrow.png" style="width: 3.5vw; float: right; vertical-align: super; z-index: 41"></a></span></div>
+                        <div class="tutor_title">5 years of tutoring experience</div>
+                        <div class="tutor_bio">Hi!! I’m Kelsey. I’m very happy I get to help students with difficult concepts and math problems on Zeal. I love helping students gain the confidence they need to excel in their classes. Tutoring students has been a way to share the passion I have for learning while also helping students think like mathematicians.</div>
+                    </div>
+                    <div class="tutor_card" id="tutor_caroline">
+                        <img src="CarolineHeadshot.jpg" style="width: 23vw; height: 190px; object-fit: cover; object-position: 80% 30%">
+                        <div class="tutor_name">Caroline Roma<a href="https://www.linkedin.com/in/carolineroma/" target="_blank" onclick="trackTutorLinkedin()"><img src="LinkedinArrow.png" style="width: 3.5vw; float: right; vertical-align: super; z-index: 41"></a></div>
+                        <div class="tutor_title">5 years of classroom experience</div>
+                        <div class="tutor_bio">Hi! I'm Caroline and I am highly passionate about student success and have been in education for 8 years. I attended Tufts University for Biology and Environmental Studies. From there I immediately went into the classroom and taught 9th grade math and 6-8 grade science for 5 years.</div>
+                    </div>
+                    <div class="tutor_card" id="tutor_adam">
+                        <img src="AdamHeadshot.jpg" style="width: 23vw; height: 190px; object-fit: cover; object-position: 80% 30%">
+                        <div class="tutor_name">Adam Triplet<a href="https://www.linkedin.com/in/adam-triplett-5a90b3bb/" target="_blank" onclick="trackTutorLinkedin()"><img src="LinkedinArrow.png" style="width: 3.5vw; float: right; vertical-align: super; z-index: 41"></a></div>
+                        <div class="tutor_title">6 years of classroom experience</div>
+                        <div class="tutor_bio">Hi! I'm Adam and I love working with students of all ages and grades. I taught middle school math for 6 years, held math enrichment classes for 2nd graders, and facilited the math club. In addition to workng at Zeal, I supervise student teachers in mostly math classrooms at National-Louis University.</div>
+                    </div>
+                </div>
+            </div>
             
             <div id="answer3">Zeal tutors are available Monday-Friday 12:00pm to 6:00pm, PDT. With Zeal, you get unlimited tutoring with no scheduling so all your child needs to do is log in to get tutoring!</div>
             
@@ -81,7 +113,6 @@
             
             <div id="answer5">Please call us at (415) 656-8243 or email us at support@zeal.com. We are here to help.</div>
         </div>
-        
     </div>
 
 
@@ -198,10 +229,11 @@
                 document.getElementById("question1").innerHTML="∨ How does Zeal work?";
                 document.getElementById("answer1").style.top="40px";
 
-                document.getElementById("question2").style.top="390px";
-                document.getElementById("question3").style.top="390px";
-                document.getElementById("question4").style.top="390px";
-                document.getElementById("question5").style.top="390px";
+                var height = $('#answer1').height();
+                document.getElementById("question2").style.top=(height + 58).toString() + 'px';
+                document.getElementById("question3").style.top=(height + 58).toString() + 'px';
+                document.getElementById("question4").style.top=(height + 58).toString() + 'px';
+                document.getElementById("question5").style.top=(height + 58).toString() + 'px';
 
                 document.getElementById("question2").style.pointerEvents="none";
                 document.getElementById("question3").style.pointerEvents="none";
@@ -209,7 +241,7 @@
                 document.getElementById("question5").style.pointerEvents="none";
             } else {
                 document.getElementById("question1").innerHTML="> How does Zeal work?";
-                document.getElementById("answer1").style.top="-260px";
+                document.getElementById("answer1").style.top="-500px";
 
                 document.getElementById("question2").style.top="50px";
                 document.getElementById("question3").style.top="50px";
@@ -238,11 +270,15 @@
                 document.getElementById("answer5").style.visibility="hidden";
 
                 document.getElementById("question2").innerHTML="∨ Who are Zeal tutors?";
-                document.getElementById("answer2").style.top="-260px";
 
-                document.getElementById("question3").style.top="145px";
-                document.getElementById("question4").style.top="145px";
-                document.getElementById("question5").style.top="145px";
+                var height1 = $('#answer1').height();
+                var height2 = $('#answer2').height();
+
+                document.getElementById("answer2").style.top=(28-height1).toString() + 'px';
+
+                document.getElementById("question3").style.top=(height2 + 58).toString() + 'px';
+                document.getElementById("question4").style.top=(height2 + 58).toString() + 'px';
+                document.getElementById("question5").style.top=(height2 + 58).toString() + 'px';
 
                 document.getElementById("question1").style.pointerEvents="none";
                 document.getElementById("question3").style.pointerEvents="none";
@@ -250,7 +286,7 @@
                 document.getElementById("question5").style.pointerEvents="none";
             } else {
                 document.getElementById("question2").innerHTML="> Who are Zeal tutors?";
-                document.getElementById("answer2").style.top="-355px";
+                document.getElementById("answer2").style.top="-1000px";
 
                 document.getElementById("question3").style.top="50px";
                 document.getElementById("question4").style.top="50px";
@@ -278,10 +314,15 @@
                 document.getElementById("answer5").style.visibility="hidden";
 
                 document.getElementById("question3").innerHTML="∨ When are tutors available?";
-                document.getElementById("answer3").style.top="-315px";
 
-                document.getElementById("question4").style.top="125px";
-                document.getElementById("question5").style.top="125px";
+                var height1 = $('#answer1').height();
+                var height2 = $('#answer2').height();
+
+                document.getElementById("answer3").style.top=(93-height1-height2).toString() + 'px';
+
+                var height = $('#answer3').height();
+                document.getElementById("question4").style.top=(height + 58).toString() + 'px';
+                document.getElementById("question5").style.top=(height + 58).toString() + 'px';
 
                 document.getElementById("question1").style.pointerEvents="none";
                 document.getElementById("question2").style.pointerEvents="none";
@@ -289,7 +330,7 @@
                 document.getElementById("question5").style.pointerEvents="none";
             } else {
                 document.getElementById("question3").innerHTML="> When are tutors available?";
-                document.getElementById("answer3").style.top="-380px";
+                document.getElementById("answer3").style.top="-1000px";
 
                 document.getElementById("question4").style.top="50px";
                 document.getElementById("question5").style.top="50px";
@@ -316,9 +357,14 @@
                 document.getElementById("answer5").style.visibility="hidden";
 
                 document.getElementById("question4").innerHTML="∨ How much does Zeal cost?";
-                document.getElementById("answer4").style.top="-350px";
 
-                document.getElementById("question5").style.top="140px";
+                var height1 = $('#answer1').height();
+                var height2 = $('#answer2').height();
+                var height3 = $('#answer3').height();
+                var height4 = $('#answer4').height();
+                document.getElementById("answer4").style.top=(124-height1-height2-height3).toString() + 'px';
+
+                document.getElementById("question5").style.top=(height4 + 58).toString() + 'px';
 
                 document.getElementById("question1").style.pointerEvents="none";
                 document.getElementById("question2").style.pointerEvents="none";
@@ -326,7 +372,7 @@
                 document.getElementById("question5").style.pointerEvents="none";
             } else {
                 document.getElementById("question4").innerHTML="> How much does Zeal cost?";
-                document.getElementById("answer4").style.top="-420px";
+                document.getElementById("answer4").style.top="-1200px";
 
                 document.getElementById("question5").style.top="50px";
 
@@ -352,7 +398,13 @@
                 document.getElementById("answer4").style.visibility="hidden";
 
                 document.getElementById("question5").innerHTML="∨ How can I contact Zeal?";
-                document.getElementById("answer5").style.top="-400px";
+
+                var height1 = $('#answer1').height();
+                var height2 = $('#answer2').height();
+                var height3 = $('#answer3').height();
+                var height4 = $('#answer4').height();
+
+                document.getElementById("answer5").style.top=(152-height1-height2-height3-height4).toString() + 'px';
 
                 document.getElementById("question1").style.pointerEvents="none";
                 document.getElementById("question2").style.pointerEvents="none";
@@ -360,7 +412,7 @@
                 document.getElementById("question4").style.pointerEvents="none";
             } else {
                 document.getElementById("question5").innerHTML="> How can I contact Zeal?";
-                document.getElementById("answer5").style.top="-470px";
+                document.getElementById("answer5").style.top="-1200px";
 
                 document.getElementById("question1").style.pointerEvents="all";
                 document.getElementById("question2").style.pointerEvents="all";
@@ -368,6 +420,45 @@
                 document.getElementById("question4").style.pointerEvents="all";
             }
             click5++;
+        }
+
+        var tutorA;
+        var tutorB;
+        var tutorC;
+        var tutorD;
+
+        var count = 0;
+
+        function fillTutorVars() {
+            tutorC = document.getElementById("tutor_adam");
+            tutorA = document.getElementById("tutor_rob");
+            tutorB = document.getElementById("tutor_kelsey");
+            tutorD = document.getElementById("tutor_caroline");
+            slideTutors();
+        }
+
+        function trackTutorLinkedin() {
+            mixpanel.track("tutor_linkedin_clicked");
+        }
+
+        function slideTutors() {
+            if (count > 0) mixpanel.track("tutor_card_clicked");
+
+            tutorC.style.zIndex = "-1";
+            tutorD.style.zIndex = "39";
+
+            tutorC.style.left = "-32vw";
+            tutorD.style.left = "0vw";
+            tutorA.style.left = "32vw";
+            tutorB.style.left = "64vw";
+
+            var temp = tutorC;
+            tutorC = tutorB;
+            tutorB = tutorA;
+            tutorA = tutorD;
+            tutorD = temp;
+
+            count++;
         }
     
     </script>
