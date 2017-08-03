@@ -272,7 +272,7 @@ body {
 }
 
 #tutor_card_container {
-    width: 25vw;
+    width: 26vw;
     height: 430px;
     position: relative;
     float: left;
@@ -285,7 +285,7 @@ body {
 .tutor_card {
     float: left;
     position: absolute;
-    width: 22vw;
+    width: 23vw;
     height: 420px;
     z-index: 39;
     min-height: 300px;
@@ -345,7 +345,6 @@ body {
     right: 0px;
     z-index: 40;
     top: 35px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.0), #ffffff);
 }
 
 #next_tutor {
