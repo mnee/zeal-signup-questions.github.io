@@ -159,7 +159,7 @@ body {
     z-index: 2;
     right: 30px;;
     margin-left: 50px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #06274E;
     color: white;
     transition: top 600ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
